@@ -8,5 +8,6 @@ describe('otherAngle', () => {
     expect(otherAngle(60, 60)).toBe(60);
     expect(otherAngle(43, 78)).toBe(59);
     expect(otherAngle(10, 20)).toBe(150);
+    expect(otherAngle(0, 0)).toBe(180);
   });
 });
