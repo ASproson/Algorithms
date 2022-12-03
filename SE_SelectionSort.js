@@ -15,6 +15,7 @@ const selectionSort = (arr) => {
   }
   return arr;
 };
+
 module.exports = { selectionSort };
 // Space: O(1) as we sort the array in place
 // Time: O(n^2) as we use two loops
