@@ -8,4 +8,5 @@ const phoneNumber = (numbers) => {
   str += numbers.slice(6, 10).join("");
   return str;
 };
+
 module.exports = { phoneNumber };
