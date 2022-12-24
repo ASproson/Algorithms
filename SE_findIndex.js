@@ -1,6 +1,6 @@
 "use strict";
 const findIndex = (arr, num) => {
-    return arr.indexOf(num);
+  return arr.indexOf(num);
 };
 module.exports = { findIndex };
 // Time: O(n) as we potentially traverse entire array
