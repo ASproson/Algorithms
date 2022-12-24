@@ -1,4 +1,5 @@
 "use strict";
+
 const findIndex = (arr, num) => {
   return arr.indexOf(num);
 };
