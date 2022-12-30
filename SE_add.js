@@ -1,6 +1,6 @@
 "use strict";
 const add = (a, b) => {
-    return a + b;
+  return a + b;
 };
 module.exports = add;
 // Space complexity is O(1) as the func only requires a fixed amount of space to store a few primitive values (a, b, and their sum)
