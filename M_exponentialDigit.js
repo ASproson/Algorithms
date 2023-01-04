@@ -4,13 +4,13 @@
 // (89, 1) should return 1 since 8¹ + 9² = 89 = 89 * 1
 // (92, 1) should return -1 since there is no k such as 9¹ + 2² equals 92 * k
 const exponentialDigit = (n, p) => {
-    const array = String(n).split("");
-    let sum = 0;
-    for (let i = 0; i < array.length; i++) {
-        let cur = Number(array[i]) ** (p + i);
-        sum += cur;
-    }
-    return sum % n ? -1 : sum / n;
+  const array = String(n).split("");
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    let cur = Number(array[i]) ** (p + i);
+    sum += cur;
+  }
+  return sum % n ? -1 : sum / n;
 };
 module.exports = { exponentialDigit };
 // Split n into a string so we can map over that array
