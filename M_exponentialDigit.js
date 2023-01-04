@@ -13,6 +13,7 @@ const exponentialDigit = (n, p) => {
   return sum % n ? -1 : sum / n;
 };
 module.exports = { exponentialDigit };
+
 // Split n into a string so we can map over that array
 // Store current value of array[i] to the power of p + i, add to sum
 // If sum % n has remainders, return -1 else return sum / 2
