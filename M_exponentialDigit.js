@@ -12,6 +12,7 @@ const exponentialDigit = (n, p) => {
   }
   return sum % n ? -1 : sum / n;
 };
+
 module.exports = { exponentialDigit };
 
 // Split n into a string so we can map over that array
