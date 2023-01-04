@@ -3,6 +3,7 @@
 // If it exists, such that the sum of the digits of n taken to the successive powers of p is equal to k * n
 // (89, 1) should return 1 since 8¹ + 9² = 89 = 89 * 1
 // (92, 1) should return -1 since there is no k such as 9¹ + 2² equals 92 * k
+
 const exponentialDigit = (n, p) => {
   const array = String(n).split("");
   let sum = 0;
