@@ -1,20 +1,20 @@
 # Algorithms
 
-Here are all my solutions for various algorithm challenges across many different platforms such as Leetcode, CodeWars, NeetCode, and AlgoExpert. 
+Here are all my solutions for various algorithm challenges across many different platforms such as Leetcode, CodeWars, NeetCode, and AlgoExpert.
 
 Every Algorithm will have a Jest test associated with it and a few comments regarding the Space/Time complexity of each algorithm
 
 ## Naming Convention
 
-Each Algorithm will start with the naming convention below, just to make it easier to determine what the relative difficulty of each is. Most often I will leave the difficulty outline to the sites where these algorithms originate from - so these assignments will rarely be mine!
+Each Algorithm will start with the naming convention below, just to make it easier to determine what the relative difficulty of each is
 
-Rest assured, the 'Easy' ones have tripped me up more times than I can count!
+_(Super Easy, Easy, Medium, Hard, Very Hard)_
 
-- SE_ === Super Easy
-- E_  === Easy
-- M_  === Medium
-- H_  === Hard
-- VH  === Very Hard
+- SE\_
+- E\_
+- M\_
+- H\_
+- VH\_
 
 ## Installation
 
