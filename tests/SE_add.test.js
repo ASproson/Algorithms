@@ -1,4 +1,4 @@
-const add = require("../add");
+const add = require("../SE_add");
 
 describe("add()", () => {
   it("returns number", () => {
