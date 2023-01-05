@@ -1,6 +1,6 @@
 # Algorithms
 
-Here are all my solutions for various algorithm challenges across many different platforms such as Leetcode, CodeWars, NeetCode, and AlgoExpert.
+Here are all my solutions for various algorithm challenges across many different platforms such as Leetcode, CodeWars, NeetCode, AlgoExpert, and many more
 
 Every Algorithm will have a Jest test associated with it and a few comments regarding the Space/Time complexity of each algorithm
 
@@ -8,13 +8,13 @@ Every Algorithm will have a Jest test associated with it and a few comments rega
 
 Each Algorithm will start with the naming convention below, just to make it easier to determine what the relative difficulty of each is
 
-_(Super Easy, Easy, Medium, Hard, Very Hard)_
-
 - SE\_
 - E\_
 - M\_
 - H\_
 - VH\_
+
+_(Super Easy, Easy, Medium, Hard, Very Hard)_
 
 ## Installation
 
