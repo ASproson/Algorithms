@@ -6,6 +6,6 @@
     "typescript": "^4.9.3"
   },
   "scripts": {
-    "test": "jest tests/E_runningSum.test.js"
+    "test": "jest tests/E_pivotIndex.test.js"
   }
 }
