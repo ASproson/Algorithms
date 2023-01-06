@@ -6,6 +6,6 @@
     "typescript": "^4.9.3"
   },
   "scripts": {
-    "test": "jest tests/E_reverseArray.test.js"
+    "test": "jest tests/SE_swap.test.js"
   }
 }
