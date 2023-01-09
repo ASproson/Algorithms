@@ -6,6 +6,6 @@
     "typescript": "^4.9.3"
   },
   "scripts": {
-    "test": "jest tests/SE_swapPointers.test.js"
+    "test": "jest tests/E_reverseLinkedList.test.js"
   }
 }
