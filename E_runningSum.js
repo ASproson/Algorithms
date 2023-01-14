@@ -20,5 +20,6 @@ module.exports = { runningSum };
 // };
 
 // module.exports = { runningSum };
+
 // Space O(n) as we modify the array in place
 // Time O(n) as need to touch every element in the array
