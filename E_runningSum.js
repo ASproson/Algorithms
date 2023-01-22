@@ -6,6 +6,7 @@ const runningSum = (nums) => {
   }
   return prefixSum;
 };
+
 module.exports = { runningSum };
 // Space O(1) as it creates a single additional data structure
 // Time O(n) as we still need to touch every single element in the array
