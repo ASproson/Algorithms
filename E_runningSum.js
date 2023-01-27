@@ -1,10 +1,10 @@
 "use strict";
 const runningSum = (nums) => {
-    const prefixSum = [nums[0]];
-    for (let i = 1; i < nums.length; i++) {
-        prefixSum[i] = prefixSum[i - 1] + nums[i];
-    }
-    return prefixSum;
+  const prefixSum = [nums[0]];
+  for (let i = 1; i < nums.length; i++) {
+    prefixSum[i] = prefixSum[i - 1] + nums[i];
+  }
+  return prefixSum;
 };
 module.exports = { runningSum };
 // Space O(1) as it creates a single additional data structure
