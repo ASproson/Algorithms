@@ -21,6 +21,7 @@ const reverseLinkedList = (head) => {
   }
   return previous;
 };
+
 module.exports = { reverseLinkedList, List_Node };
 // Time: O(n) as we have to traverse the entire array
 // Space: O(1) as we only use a constant amount of memorgy regardless of the list size
