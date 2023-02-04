@@ -14,5 +14,6 @@ const reverseArray = (arr) => {
   return arr;
 };
 module.exports = { reverseArray };
+
 // Time: O(n) as we have to interact with the entire array
 // Space: O(1) as we reverse the array in place
