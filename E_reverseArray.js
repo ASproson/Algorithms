@@ -1,5 +1,6 @@
 "use strict";
 // Write a function called reverseArray that takes in an array of integers and returns a new array with the integers in reverse order. The function should use pointers to reverse the array in place, meaning that it should not create a new array to hold the reversed elements
+
 const reverseArray = (arr) => {
   let left = 0;
   let right = arr.length - 1;
