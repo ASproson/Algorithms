@@ -13,6 +13,7 @@ const reverseArray = (arr) => {
   }
   return arr;
 };
+
 module.exports = { reverseArray };
 
 // Time: O(n) as we have to interact with the entire array
