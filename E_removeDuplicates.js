@@ -1,5 +1,6 @@
 "use strict";
 // Write a function removeDuplicates that takes in an array of integers and removes any duplicates. The function should return a new array with the duplicates removed
+
 const removeDuplicates = (nums) => {
   const map = {};
   for (const i of nums) {
