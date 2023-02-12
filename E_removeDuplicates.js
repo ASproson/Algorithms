@@ -10,5 +10,6 @@ const removeDuplicates = (nums) => {
 };
 
 module.exports = { removeDuplicates };
+
 // Space O(n) as the map will most values in the array (constant)
 // Time O(n) as we must traverse the entire array
