@@ -1,4 +1,5 @@
 "use strict";
+
 const pivotIndex = (nums) => {
   const sum = nums.reduce((acc, cur) => acc + cur, 0);
   let leftSum = 0;
