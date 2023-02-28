@@ -10,6 +10,7 @@ const pivotIndex = (nums) => {
   }
   return -1;
 };
+
 module.exports = { pivotIndex };
 // const pivotIndex = (nums: number[]): number => {
 //   let leftSum = 0;
