@@ -20,6 +20,8 @@ const middleNode = (head) => {
   }
   return slow;
 };
+
 module.exports = { middleNode, LinkNode };
+
 // Time: O(n) as we need to touch every node
 // Space: O(1) as the memory used it constant regardless of input size
