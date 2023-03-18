@@ -69,5 +69,6 @@ const mergeTwoSortedListsIteration = (list1, list2) => {
   }
   return mergedList;
 };
+
 // Time: O(n) as we have touch all the nodes in the lists
 // Space: O(1) as our generated list is based on the input parameters
