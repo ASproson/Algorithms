@@ -26,6 +26,7 @@ const mergeTwoSortedLists = (list1, list2) => {
 };
 // Time: O(n)
 // Space: O(n)
+
 module.exports = { mergeTwoSortedLists, ListNode };
 const mergeTwoSortedListsIteration = (list1, list2) => {
   // handle edge cases where either list is empty
