@@ -15,6 +15,7 @@ const isUniqueCharacter = (str) => {
 
 // Time: O(n) as it must interact with every element in the array
 // Space: O(n) and is proportional to input string
+
 module.exports = { isUniqueCharacter };
 const isUniqueCharacterAlt = (str) => {
   str = str.toLowerCase();
