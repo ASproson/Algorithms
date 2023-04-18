@@ -11,6 +11,7 @@ const isSubsequence = (s, t) => {
   }
   return sPointer === s.length ? true : false;
 };
+
 module.exports = { isSubsequence };
 // Time: O(n) as we need to traverse the input strings
 // Space: O(1) as no additional data structures, only primitive values
