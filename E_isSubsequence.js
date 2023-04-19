@@ -1,16 +1,15 @@
 "use strict";
 const isSubsequence = (s, t) => {
-    if (s.length > t.length)
-        return false;
-    let sPointer = 0;
-    let tPointer = 0;
-    while (sPointer < s.length && tPointer < t.length) {
-        if (s[sPointer] === t[tPointer]) {
-            sPointer++;
-        }
-        tPointer++;
+  if (s.length > t.length) return false;
+  let sPointer = 0;
+  let tPointer = 0;
+  while (sPointer < s.length && tPointer < t.length) {
+    if (s[sPointer] === t[tPointer]) {
+      sPointer++;
     }
-    return sPointer === s.length ? true : false;
+    tPointer++;
+  }
+  return sPointer === s.length ? true : false;
 };
 module.exports = { isSubsequence };
 // Time: O(n) as we need to traverse the input strings
