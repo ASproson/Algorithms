@@ -1,4 +1,5 @@
 "use strict";
+
 const isSubsequence = (s, t) => {
   if (s.length > t.length) return false;
   let sPointer = 0;
