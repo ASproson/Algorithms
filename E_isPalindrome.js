@@ -15,6 +15,7 @@ const isPalindrome = (str) => {
   }
   return true;
 };
+
 module.exports = { isPalindrome };
 
 // Time: O(n) as we have to traverse the entire array
