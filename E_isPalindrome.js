@@ -16,10 +16,12 @@ const isPalindrome = (str) => {
   return true;
 };
 module.exports = { isPalindrome };
+
 // Time: O(n) as we have to traverse the entire array
 // Space: O(1) as check everything in place
 const isPalindromeAlt = (str) => {
   str = str.replace(/[^a-z]/gi, "").toLowerCase();
   return str.split("").every((char, i) => char === str[str.length - i - 1]);
 };
+
 // Same Space/Time
