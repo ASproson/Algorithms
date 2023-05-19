@@ -1,4 +1,5 @@
 "use strict";
+
 const isomorphicString = (s, t) => {
   if (s.length !== t.length) {
     return false;
