@@ -19,6 +19,7 @@ const isomorphicString = (s, t) => {
   }
   return true;
 };
+
 module.exports = { isomorphicString };
 
 // Space: O(n), maps proportional to input strings
