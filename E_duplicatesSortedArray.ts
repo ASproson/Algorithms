@@ -1,5 +1,5 @@
 export const removeDuplicatesSortedArray = (nums: number[]): number => {
-  if (!nums) return 0;
+  if (!nums.length) return 0;
 
   let uniqueValueCounter = 1;
   let heldValue = nums[0];
