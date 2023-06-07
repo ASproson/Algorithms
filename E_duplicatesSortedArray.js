@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.removeDuplicatesSortedArray = void 0;
 const removeDuplicatesSortedArray = (nums) => {
-    if (!nums)
+    if (!nums.length)
         return 0;
     let uniqueValueCounter = 1;
     let heldValue = nums[0];
