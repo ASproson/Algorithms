@@ -1,8 +1,8 @@
 const { removeDuplicatesSortedArray } = require("../E_duplicatesSortedArray");
 
 describe("removeDuplicatesSortedArray()", () => {
-  test("returns 0 when given nothing", () => {
-    expect(removeDuplicatesSortedArray()).toEqual(0);
+  test("returns 0 when given an empty array", () => {
+    expect(removeDuplicatesSortedArray([])).toEqual(0);
   });
   test("returns [1, 2] when passed [1, 1, 2] and modifies the original array", () => {
     let nums = [1, 1, 2];
