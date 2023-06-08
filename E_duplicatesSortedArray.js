@@ -16,3 +16,5 @@ const removeDuplicatesSortedArray = (nums) => {
     return uniqueValueCounter;
 };
 exports.removeDuplicatesSortedArray = removeDuplicatesSortedArray;
+// Time complexity is O(n), n is the length of the input array 'nums'. This is because we have to check if each value is unique or not
+// Space complexity is O(1) as it uses a constant amount of space, regardless of the size of the input array
