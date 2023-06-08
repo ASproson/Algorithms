@@ -9,15 +9,15 @@ describe("removeElement()", () => {
   it("removes all instances of the passed number from the array in place", () => {
     const nums = [3, 2, 2, 3];
     const val = 3;
-    const res = removeElement(nums, val);
+    removeElement(nums, val);
     expect(nums.slice(0, 2)).toEqual([2, 2]);
-    expect(res).toHaveLength(2);
+    expect(nums).toHaveLength(2);
   });
   it("removes all instances of the passed number from the array in place", () => {
     const nums = [0, 1, 2, 2, 3, 0, 4, 2];
     const val = 2;
     const res = removeElement(nums, val);
-    expect(nums.slice(0, 4)).toEqual([0, 1, 4, 0, 3]);
-    expect(res).toHaveLength(5);
+    expect(nums.slice(0, 5)).toEqual([0, 1, 3, 0, 4]);
+    expect(nums).toHaveLength(5);
   });
 });
