@@ -8,4 +8,5 @@ const bitCounting = (n) => {
     .split("")
     .filter((num) => Number(num) === 1).length;
 };
+
 module.exports = { bitCounting };
