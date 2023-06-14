@@ -1,5 +1,6 @@
 "use strict";
 // Write a function uniqueCharacters that takes in a string and returns a boolean indicating whether the string contains all unique characters. The function should be case-insensitive
+
 const isUniqueCharacter = (str) => {
   str = str.toLowerCase();
   const charSet = {};
