@@ -6,6 +6,6 @@
     "typescript": "^4.9.3"
   },
   "scripts": {
-    "test": "jest --watch tests/M_isTriangle.test.js"
+    "test": "jest --watch tests/M_exponentialDigit.test.js"
   }
 }
