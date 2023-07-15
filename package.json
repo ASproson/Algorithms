@@ -6,6 +6,6 @@
     "typescript": "^4.9.3"
   },
   "scripts": {
-    "test": "jest --watch tests/E_pyramidArray.test.js"
+    "test": "jest --watch tests/E_cleanString.test.js"
   }
 }
