@@ -1,4 +1,6 @@
 "use strict";
+// Write a function that when given a number >= 0, returns an Array of ascending length subarrays
+// pyramid(1) => [ [1] ] ┤ pyramid(1) => [ [1] ]
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.pyramidArray = void 0;
 const pyramidArray = (n) => {
