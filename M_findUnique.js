@@ -1,4 +1,6 @@
 "use strict";
+// There is an array with some numbers. All numbers are equal except for one
+// Consider that the arrays might be very large, so consider performance
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.findUnique = void 0;
 const findUnique = (arr) => {
