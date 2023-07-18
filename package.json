@@ -6,6 +6,6 @@
     "typescript": "^4.9.3"
   },
   "scripts": {
-    "test": "jest --watch tests/H_matrixDeterminant.test.js"
+    "test": "jest --watch tests/SE_reverseString.test.js"
   }
 }
