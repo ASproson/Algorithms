@@ -6,6 +6,6 @@
     "typescript": "^4.9.3"
   },
   "scripts": {
-    "test": "jest --watch tests/SE_squareSum.test.js"
+    "test": "jest --watch tests/SE_greet.test.js"
   }
 }
