@@ -1,4 +1,4 @@
-const { swap } = require("../SE_swap");
+const { swap } = require("../SuperEasy/SE_swap");
 
 describe("swap", () => {
   it("returns an array", () => {

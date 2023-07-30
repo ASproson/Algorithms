@@ -1,4 +1,4 @@
-const { exponentialDigit } = require("../M_exponentialDigit");
+const { exponentialDigit } = require("../Medium/M_exponentialDigit");
 
 describe("exponentialDigit", () => {
   it("returns 1 when passed 89, 1", () => {

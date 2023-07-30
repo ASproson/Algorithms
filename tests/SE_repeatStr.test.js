@@ -1,5 +1,5 @@
 "use strict";
-const { repeatStr } = require("../SE_repeatStr");
+const { repeatStr } = require("../SuperEasy/SE_repeatStr");
 describe("repeatStr()", () => {
     test("when given 2, str; it returns strstr", () => {
         expect(repeatStr(2, "str")).toEqual("strstr");

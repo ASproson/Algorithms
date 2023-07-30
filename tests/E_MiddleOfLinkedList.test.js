@@ -1,4 +1,4 @@
-const { middleNode, LinkNode } = require("../E_MiddleOfLinkedList");
+const { middleNode, LinkNode } = require("../Easy/E_MiddleOfLinkedList");
 
 describe("middleNode", () => {
   test("returns null for an empty list", () => {

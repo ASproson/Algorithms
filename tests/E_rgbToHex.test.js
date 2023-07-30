@@ -1,4 +1,4 @@
-const { rgbToHex } = require("../E_rgbToHex");
+const { rgbToHex } = require("../Easy/E_rgbToHex");
 
 describe("rgbToHex()", () => {
   test("it returns 0,0,0 when passed 000000", () => {

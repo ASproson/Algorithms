@@ -1,4 +1,4 @@
-const { isPalindrome } = require("../E_isPalindrome");
+const { isPalindrome } = require("../Easy/E_isPalindrome");
 
 describe("isPalindrome()", () => {
   it("returns a boolean", () => {

@@ -1,5 +1,5 @@
 "use strict";
-const { removeChar } = require("../SE_removeChar");
+const { removeChar } = require("../SuperEasy/SE_removeChar");
 describe("removeChar()", () => {
     test("when given eloquent return loquen", () => {
         expect(removeChar("eloquent")).toEqual("loquen");

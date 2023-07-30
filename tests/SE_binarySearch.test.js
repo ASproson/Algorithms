@@ -1,4 +1,4 @@
-const { binarySearch } = require("../SE_binarySearch");
+const { binarySearch } = require("../SuperEasy/SE_binarySearch");
 
 describe("binarySearch", () => {
   test("finds the target value in the array", () => {

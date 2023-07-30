@@ -1,4 +1,4 @@
-const { removeDuplicates } = require("../E_removeDuplicates");
+const { removeDuplicates } = require("../Easy/E_removeDuplicates");
 
 describe("removeDuplicates()", () => {
   it("returns an array", () => {

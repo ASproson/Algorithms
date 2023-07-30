@@ -1,4 +1,7 @@
-const { mergeTwoSortedLists, ListNode } = require("../E_mergeTwoSortedLists");
+const {
+  mergeTwoSortedLists,
+  ListNode,
+} = require("../Easy/E_mergeTwoSortedLists");
 
 describe("mergeTwoSortedLists()", () => {
   it("returns expected when passed list1 && list2", () => {

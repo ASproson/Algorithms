@@ -1,5 +1,5 @@
 "use strict";
-const { paperwork } = require("../SE_paperwork");
+const { paperwork } = require("../SuperEasy/SE_paperwork");
 describe("paperwork()", () => {
     test("when given 5, 5 it returns 25", () => {
         expect(paperwork(5, 5)).toEqual(25);

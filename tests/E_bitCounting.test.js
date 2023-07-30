@@ -1,4 +1,4 @@
-const { bitCounting } = require("../E_bitCounting");
+const { bitCounting } = require("../Easy/E_bitCounting");
 
 describe("bitCounting()", () => {
   test("when given 0 returns 0", () => {

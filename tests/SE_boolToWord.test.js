@@ -1,4 +1,4 @@
-const { boolToWord } = require("../SE_boolToWord");
+const { boolToWord } = require("../SuperEasy/SE_boolToWord");
 
 describe("boolToWord()", () => {
   test("returns Yes when given true", () => {

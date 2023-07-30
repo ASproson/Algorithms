@@ -1,4 +1,4 @@
-const { isomorphicString } = require("../E_isomorhpicString");
+const { isomorphicString } = require("../Easy/E_isomorhpicString");
 
 describe("isomorphicString()", () => {
   it("returns a boolean", () => {

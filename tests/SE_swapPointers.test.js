@@ -1,4 +1,4 @@
-const { swapPointers } = require("../SE_swapPointers");
+const { swapPointers } = require("../SuperEasy/SE_swapPointers");
 
 describe("swapPointers()", () => {
   it("returns an array", () => {

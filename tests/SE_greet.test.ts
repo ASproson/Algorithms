@@ -1,4 +1,4 @@
-const { greet } = require("../SE_greet");
+const { greet } = require("../SuperEasy/SE_greet");
 
 describe("greet()", () => {
   test("when given Ryan returns Hello, Ryan how are you doing today?", () => {

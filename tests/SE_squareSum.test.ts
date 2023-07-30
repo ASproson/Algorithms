@@ -1,4 +1,4 @@
-const { squareSum } = require("../SE_squareSum");
+const { squareSum } = require("../SuperEasy/SE_squareSum");
 
 describe("squareSum()", () => {
   test("when given [1,2] returns 5", () => {

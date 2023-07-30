@@ -1,4 +1,6 @@
-const { removeDuplicatesSortedArray } = require("../E_duplicatesSortedArray");
+const {
+  removeDuplicatesSortedArray,
+} = require("../Easy/E_duplicatesSortedArray");
 
 describe("removeDuplicatesSortedArray()", () => {
   test("returns 0 when given an empty array", () => {

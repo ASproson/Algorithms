@@ -1,4 +1,4 @@
-const { isSubsequence } = require("../E_isSubsequence");
+const { isSubsequence } = require("../Easy/E_isSubsequence");
 
 describe("isSubsequence()", () => {
   it("returns a boolean", () => {

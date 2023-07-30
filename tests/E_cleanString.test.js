@@ -1,4 +1,4 @@
-const { cleanString } = require("../E_cleanString");
+const { cleanString } = require("../Easy/E_cleanString");
 
 describe("cleanString()", () => {
   test('when given "abc#d##c" returns ac', () => {

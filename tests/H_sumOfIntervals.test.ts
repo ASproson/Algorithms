@@ -1,4 +1,4 @@
-const { sumOfIntervals } = require("../H_sumOfIntervals");
+const { sumOfIntervals } = require("../Hard/H_sumOfIntervals");
 
 describe("sumOfIntervals()", () => {
   test("when given [[1,5]] it returns 4", () => {

@@ -1,4 +1,4 @@
-const { reverseLinkedList, List_Node } = require("../E_reverseLinkedList");
+const { reverseLinkedList, List_Node } = require("../Easy/E_reverseLinkedList");
 
 describe("reverseLinkedList", () => {
   it("should return null for an empty list", () => {

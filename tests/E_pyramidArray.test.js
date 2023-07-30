@@ -1,4 +1,4 @@
-const { pyramidArray } = require("../E_pyramidArray");
+const { pyramidArray } = require("../Easy/E_pyramidArray");
 
 describe("pyramidArray()", () => {
   test("returns [] when given 0", () => {

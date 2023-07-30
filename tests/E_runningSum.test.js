@@ -1,4 +1,4 @@
-const { runningSum } = require("../E_runningSum");
+const { runningSum } = require("../Easy/E_runningSum");
 
 describe("runningSum", () => {
   it("returns an array of numbers", () => {

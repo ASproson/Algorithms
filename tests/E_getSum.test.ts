@@ -1,4 +1,4 @@
-const { getSum } = require("../E_getSum");
+const { getSum } = require("../Easy/E_getSum");
 
 describe("getSum()", () => {
   test("when given 0,-1 it returns -1", () => {

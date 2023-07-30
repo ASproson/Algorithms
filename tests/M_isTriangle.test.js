@@ -1,4 +1,4 @@
-const { isTriangle } = require("../M_isTriangle");
+const { isTriangle } = require("../Medium/M_isTriangle");
 
 describe("isTriangle", () => {
   it("returns false when passed an uneven triangle", () => {

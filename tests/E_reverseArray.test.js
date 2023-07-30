@@ -1,4 +1,4 @@
-const { reverseArray } = require("../E_reverseArray");
+const { reverseArray } = require("../Easy/E_reverseArray");
 
 describe("reverseArray", () => {
   it("returns an array", () => {

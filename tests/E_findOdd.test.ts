@@ -1,4 +1,4 @@
-const { findOdd } = require("../E_findOdd");
+const { findOdd } = require("../Easy/E_findOdd");
 
 describe("findOdd()", () => {
   test("expect 5 when given [20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5]", () => {

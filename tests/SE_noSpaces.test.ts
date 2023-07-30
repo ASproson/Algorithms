@@ -1,4 +1,4 @@
-const { noSpaces } = require("../SE_noSpaces");
+const { noSpaces } = require("../SuperEasy/SE_noSpaces");
 
 describe("noSpaces()", () => {
   test("when given 8 j 8   mBliB8g  imjB8B8  jl  B expect 8j8mBliB8gimjB8B8jlB", () => {

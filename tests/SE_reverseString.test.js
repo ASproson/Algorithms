@@ -1,4 +1,4 @@
-const { reverseString } = require("../SE_reverseString");
+const { reverseString } = require("../SuperEasy/SE_reverseString");
 
 describe("reverseString()", () => {
   test("returns drow when passed word", () => {

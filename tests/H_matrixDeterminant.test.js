@@ -1,4 +1,4 @@
-const { matrixDeterminant } = require("../H_matrixDeterminant");
+const { matrixDeterminant } = require("../Hard/H_matrixDeterminant");
 
 const m1 = [
   [1, 3],

@@ -1,4 +1,6 @@
-const { longestConsecutiveString } = require("../M_longestConsecutiveString");
+const {
+  longestConsecutiveString,
+} = require("../Medium/M_longestConsecutiveString");
 
 describe("longestConsecutiveString()", () => {
   test("when passed [zone, abigail, theta, form, libe, zas], 2; returns abigailtheta", () => {

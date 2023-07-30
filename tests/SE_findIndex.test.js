@@ -1,4 +1,4 @@
-const { findIndex } = require("../SE_findIndex");
+const { findIndex } = require("../SuperEasy/SE_findIndex");
 
 describe("findIndex()", () => {
   it("returns a number", () => {

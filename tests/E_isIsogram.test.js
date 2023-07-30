@@ -1,4 +1,4 @@
-const { isIsogram } = require("../E_isIsogram");
+const { isIsogram } = require("../Easy/E_isIsogram");
 
 describe("isIsogram()", () => {
   test("returns true when given Dermatoglyphics", () => {

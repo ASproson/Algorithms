@@ -1,4 +1,4 @@
-const { selectionSort } = require("../SE_SelectionSort");
+const { selectionSort } = require("../SuperEasy/SE_SelectionSort");
 
 describe("selectionSort()", () => {
   test("sort array of numbers in ascending order", () => {

@@ -1,4 +1,4 @@
-const add = require("../SE_add");
+const add = require("../SuperEasy/SE_add");
 
 describe("add()", () => {
   it("returns number", () => {

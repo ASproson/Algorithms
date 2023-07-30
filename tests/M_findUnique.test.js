@@ -1,4 +1,4 @@
-const { findUnique } = require("../M_findUnique");
+const { findUnique } = require("../Medium/M_findUnique");
 
 describe("findUnique()", () => {
   test("expect [ 1, 1, 1, 2, 1, 1 ] to be 2", () => {

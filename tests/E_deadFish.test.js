@@ -1,4 +1,4 @@
-const { deadFish } = require("../E_deadFish");
+const { deadFish } = require("../Easy/E_deadFish");
 
 describe("deadFish()", () => {
   test('expect "iiisdoso" to be [8, 64', () => {

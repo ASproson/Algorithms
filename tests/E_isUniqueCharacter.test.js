@@ -1,4 +1,4 @@
-const { isUniqueCharacter } = require("../E_isUniqueCharacter");
+const { isUniqueCharacter } = require("../Easy/E_isUniqueCharacter");
 
 describe("isUniqueCharacter()", () => {
   it("returns a boolean", () => {

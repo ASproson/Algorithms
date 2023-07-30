@@ -1,4 +1,4 @@
-const { alphabetReplace } = require("../E_alphabetReplace");
+const { alphabetReplace } = require("../Easy/E_alphabetReplace");
 
 describe("alphabetReplace()", () => {
   it("returns a string", () => {

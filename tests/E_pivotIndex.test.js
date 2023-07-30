@@ -1,4 +1,4 @@
-const { pivotIndex } = require("../E_pivotIndex");
+const { pivotIndex } = require("../Easy/E_pivotIndex");
 
 describe("pivotIndex", () => {
   it("returns type number", () => {
