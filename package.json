@@ -6,6 +6,11 @@
     "typescript": "^4.9.3"
   },
   "scripts": {
-    "test": "jest --watch tests/H_sumOfIntervals.test.ts"
+    "test": "jest --watch tests/H_sumOfIntervals.test.ts",
+    "testSuperEasy": "jest --watch tests/SE_*",
+    "testEasy": "jest --watch tests/E_*",
+    "testMedium": "jest --watch tests/M_*",
+    "testHard": "jest --watch tests/H_*"
   }
+  
 }
