@@ -31,7 +31,7 @@ Alternatively you can run tests individually by modifying the package.json scrip
   }
 ```
 
-If you want to run the test `H_matrixDetermination.ts` instead, simply replace `H_sumOfIntervals.test.js` with `H_matrixDetermination.ts`. To run a test, enter the following command:
+If you want to run the test `H_matrixDetermination.test.ts` instead, simply replace `H_sumOfIntervals.test.ts` with `H_matrixDetermination.test.ts`. To run a test, enter the following command:
 
 > `npm t`
 
