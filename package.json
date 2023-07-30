@@ -10,7 +10,8 @@
     "testSuperEasy": "jest --watch tests/SE_*",
     "testEasy": "jest --watch tests/E_*",
     "testMedium": "jest --watch tests/M_*",
-    "testHard": "jest --watch tests/H_*"
+    "testHard": "jest --watch tests/H_*",
+    "testBubble": "jest --watch DSA/bubbleSort.test.js"
   }
   
 }
