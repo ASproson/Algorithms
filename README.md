@@ -4,18 +4,6 @@ Here are all my solutions for various algorithm challenges across many different
 
 Every Algorithm will have a Jest test associated with it and a few comments regarding the Space/Time complexity of each algorithm
 
-## Naming Convention
-
-Each Algorithm will start with the naming convention below, just to make it easier to determine what the relative difficulty of each is
-
-- SE\_
-- E\_
-- M\_
-- H\_
-- VH\_
-
-_(Super Easy, Easy, Medium, Hard, Very Hard)_
-
 ## Installation
 
 Open a terminal in your chosen directory and paste the following:
@@ -30,11 +18,11 @@ Tests are ran individually by modifying the package.json script:
 
 ```JSON
   "scripts": {
-    "test": "jest tests/add.test.js"
+    "test": "jest --watch tests/H_sumOfIntervals.test.js"
   }
 ```
 
-If you want to run the test `groupedAnagrams.ts` instead, simply replace `add.test` with `groupedAnagrams.test`. To run a test, enter the following command:
+If you want to run the test `H_matrixDetermination.ts` instead, simply replace `H_sumOfIntervals.test.js` with `H_matrixDetermination.ts`. To run a test, enter the following command:
 
 > `npm t`
 
