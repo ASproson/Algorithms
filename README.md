@@ -14,7 +14,16 @@ Open a terminal in your chosen directory and paste the following:
 
 ## Test Running
 
-Tests are ran individually by modifying the package.json script:
+You can run entire test categories with the commands:
+
+```bash
+npm run testSuperEasy
+npm run testEasy
+npm run testMedium
+npm run testHard
+```
+
+Alternatively you can run tests individually by modifying the package.json script:
 
 ```JSON
   "scripts": {
