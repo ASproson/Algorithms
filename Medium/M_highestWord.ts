@@ -5,17 +5,17 @@ export const highestWord = (str: string): string => {
   let highestScoreWord = '';
 
   for (const word of words) {
-    let wordScore = 0;
+    let currentWordScore = 0;
     for (const char of word) {
-      wordScore += char.charCodeAt(0) - 'a'.charCodeAt(0) + 1;
+      currentWordScore += char.charCodeAt(0) - 'a'.charCodeAt(0) + 1;
     }
 
     if (
-      wordScore > highestScore ||
-      (wordScore === highestScore &&
+      currentWordScore > highestScore ||
+      (currentWordScore === highestScore &&
         word.indexOf(highestScoreWord) < word.indexOf(highestScoreWord))
     ) {
-      highestScore = wordScore;
+      highestScore = currentWordScore;
       highestScoreWord = word;
     }
   }
