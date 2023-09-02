@@ -1,14 +1,14 @@
+const digitFollowedByAllZeroes = (numberString: string[]) => {
+  const numberStringCopy = [...numberString];
+  numberStringCopy.shift();
+  return numberStringCopy.every((e) => e === '0') ? 2 : 0;
+};
+
 const everyDigitIsTheSameNumber = (
   numberString: string[],
   firstNumber: string
 ): number => {
   return numberString.every((e) => e === firstNumber) ? 2 : 0;
-};
-
-const digitFollowedByAllZeroes = (numberString: string[]) => {
-  const numberStringCopy = [...numberString];
-  numberStringCopy.shift();
-  return numberStringCopy.every((e) => e === '0') ? 2 : 0;
 };
 
 const numbersAreSequential = (numberString: string[]): number => {
@@ -22,6 +22,11 @@ const numbersAreSequential = (numberString: string[]): number => {
     }
   }
   return 2;
+};
+
+const isPalindrome = (number: number): number => {
+  const reversedString = String(number).split('').reverse().join('');
+  return String(number) === reversedString ? 2 : 0;
 };
 
 const numberMatchesPhrase = (n: number, phrases: number[]) => {
@@ -41,6 +46,7 @@ export const isNumberInteresting = (
   if (digitFollowedByAllZeroes(numberString) === 2) return 2;
   if (numbersAreSequential(numberString) === 2) return 2;
   if (numberMatchesPhrase(n, awesomePhrases) === 2) return 2;
+  if (isPalindrome(n) === 2) return 2;
 
   return 0;
 };
