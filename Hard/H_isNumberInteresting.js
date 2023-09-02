@@ -26,22 +26,27 @@ const isPalindrome = (number) => {
     const reversedString = String(number).split('').reverse().join('');
     return String(number) === reversedString ? 2 : 0;
 };
-const numberMatchesPhrase = (n, phrases) => {
-    return phrases.filter((e) => e === n).length ? 2 : 0;
+const numberIsInPhrases = (n, phrases) => {
+    if (phrases.includes(n))
+        return 2;
+    if (phrases.includes(n + 1) || phrases.includes(n + 2))
+        return 1;
+    return 0;
 };
 const isNumberInteresting = (n, awesomePhrases) => {
     if (n <= 99)
         return 0;
     const numberString = String(n).split('');
     const firstNumber = numberString[0];
+    const isNumberInPhrases = numberIsInPhrases(n, awesomePhrases);
     if (everyDigitIsTheSameNumber(numberString, firstNumber) === 2)
         return 2;
     if (digitFollowedByAllZeroes(numberString) === 2)
         return 2;
     if (numbersAreSequential(numberString) === 2)
         return 2;
-    if (numberMatchesPhrase(n, awesomePhrases) === 2)
-        return 2;
+    if (isNumberInPhrases !== 0)
+        return isNumberInPhrases;
     if (isPalindrome(n) === 2)
         return 2;
     return 0;
