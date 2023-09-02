@@ -1,13 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.isNumberInteresting = void 0;
-const everyDigitIsTheSameNumber = (numberString, firstNumber) => {
-    return numberString.every((e) => e === firstNumber) ? 2 : 0;
-};
 const digitFollowedByAllZeroes = (numberString) => {
     const numberStringCopy = [...numberString];
     numberStringCopy.shift();
     return numberStringCopy.every((e) => e === '0') ? 2 : 0;
+};
+const everyDigitIsTheSameNumber = (numberString, firstNumber) => {
+    return numberString.every((e) => e === firstNumber) ? 2 : 0;
 };
 const numbersAreSequential = (numberString) => {
     for (let i = 1; i < numberString.length; i++) {
@@ -21,6 +21,10 @@ const numbersAreSequential = (numberString) => {
         }
     }
     return 2;
+};
+const isPalindrome = (number) => {
+    const reversedString = String(number).split('').reverse().join('');
+    return String(number) === reversedString ? 2 : 0;
 };
 const numberMatchesPhrase = (n, phrases) => {
     return phrases.filter((e) => e === n).length ? 2 : 0;
@@ -37,6 +41,8 @@ const isNumberInteresting = (n, awesomePhrases) => {
     if (numbersAreSequential(numberString) === 2)
         return 2;
     if (numberMatchesPhrase(n, awesomePhrases) === 2)
+        return 2;
+    if (isPalindrome(n) === 2)
         return 2;
     return 0;
 };
