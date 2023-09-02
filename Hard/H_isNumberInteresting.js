@@ -22,6 +22,9 @@ const numbersAreSequential = (numberString) => {
     }
     return 2;
 };
+const numberMatchesPhrase = (n, phrases) => {
+    return phrases.filter((e) => e === n).length ? 2 : 0;
+};
 const isNumberInteresting = (n, awesomePhrases) => {
     if (n <= 99)
         return 0;
@@ -32,6 +35,8 @@ const isNumberInteresting = (n, awesomePhrases) => {
     if (digitFollowedByAllZeroes(numberString) === 2)
         return 2;
     if (numbersAreSequential(numberString) === 2)
+        return 2;
+    if (numberMatchesPhrase(n, awesomePhrases) === 2)
         return 2;
     return 0;
 };
