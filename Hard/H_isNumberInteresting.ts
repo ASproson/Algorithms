@@ -24,6 +24,10 @@ const numbersAreSequential = (numberString: string[]): number => {
   return 2;
 };
 
+const numberMatchesPhrase = (n: number, phrases: number[]) => {
+  return phrases.filter((e) => e === n).length ? 2 : 0;
+};
+
 export const isNumberInteresting = (
   n: number,
   awesomePhrases: number[]
@@ -36,6 +40,7 @@ export const isNumberInteresting = (
   if (everyDigitIsTheSameNumber(numberString, firstNumber) === 2) return 2;
   if (digitFollowedByAllZeroes(numberString) === 2) return 2;
   if (numbersAreSequential(numberString) === 2) return 2;
+  if (numberMatchesPhrase(n, awesomePhrases) === 2) return 2;
 
   return 0;
 };
