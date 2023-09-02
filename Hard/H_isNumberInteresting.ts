@@ -29,8 +29,10 @@ const isPalindrome = (number: number): number => {
   return String(number) === reversedString ? 2 : 0;
 };
 
-const numberMatchesPhrase = (n: number, phrases: number[]) => {
-  return phrases.filter((e) => e === n).length ? 2 : 0;
+const numberIsInPhrases = (n: number, phrases: number[]) => {
+  if (phrases.includes(n)) return 2;
+  if (phrases.includes(n + 1) || phrases.includes(n + 2)) return 1;
+  return 0;
 };
 
 export const isNumberInteresting = (
@@ -42,15 +44,16 @@ export const isNumberInteresting = (
   const numberString = String(n).split('');
   const firstNumber = numberString[0];
 
+  const isNumberInPhrases = numberIsInPhrases(n, awesomePhrases);
+
   if (everyDigitIsTheSameNumber(numberString, firstNumber) === 2) return 2;
   if (digitFollowedByAllZeroes(numberString) === 2) return 2;
   if (numbersAreSequential(numberString) === 2) return 2;
-  if (numberMatchesPhrase(n, awesomePhrases) === 2) return 2;
+  if (isNumberInPhrases !== 0) return isNumberInPhrases;
   if (isPalindrome(n) === 2) return 2;
 
   return 0;
 };
-
 // https://www.codewars.com/kata/52c4dd683bfd3b434c000292/train/typescript
 
 // "7777...8?!??!", exclaimed Bob, "I missed it again! Argh!" Every time there's an interesting number coming up, he notices and then promptly forgets. Who doesn't like catching those one-off interesting mileage numbers?
