@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const H_isNumberInteresting_1 = require("../Hard/H_isNumberInteresting");
-describe('solution', () => {
-    it('should work, dangit!', () => {
+describe('isNumberInteresting()', () => {
+    it('', () => {
         expect((0, H_isNumberInteresting_1.isNumberInteresting)(3, [1337, 256])).toBe(0);
         expect((0, H_isNumberInteresting_1.isNumberInteresting)(1336, [1337, 256])).toBe(1);
         expect((0, H_isNumberInteresting_1.isNumberInteresting)(1337, [1337, 256])).toBe(2);

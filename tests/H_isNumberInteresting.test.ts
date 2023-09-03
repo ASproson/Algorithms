@@ -1,7 +1,7 @@
 import { isNumberInteresting } from '../Hard/H_isNumberInteresting';
 
-describe('solution', () => {
-  it('should work, dangit!', () => {
+describe('isNumberInteresting()', () => {
+  it('', () => {
     expect(isNumberInteresting(3, [1337, 256])).toBe(0);
     expect(isNumberInteresting(1336, [1337, 256])).toBe(1);
     expect(isNumberInteresting(1337, [1337, 256])).toBe(2);
