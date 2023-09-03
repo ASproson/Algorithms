@@ -2,6 +2,23 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.isNumberInteresting = void 0;
 const digitFollowedByAllZeroes = (n) => {
+    const strConversion = String(n);
+    const strConversionOne = String(n + 1);
+    const strConversionTwo = String(n + 2);
+    if (strConversion
+        .slice(1)
+        .split('')
+        .every((e) => e === '0'))
+        return 2;
+    if (strConversionOne
+        .slice(1)
+        .split('')
+        .every((e) => e === '0') ||
+        strConversionTwo
+            .slice(1)
+            .split('')
+            .every((e) => e === '0'))
+        return 1;
     return 0;
 };
 const everyDigitIsTheSameNumber = (n) => {
@@ -37,7 +54,8 @@ const determinePalindrome = (n) => {
         .join('');
     if (String(n) === reversedString)
         return 2;
-    if (String(n) === reversedStringAddOne || String(n) === reversedStringAddTwo)
+    if (String(n + 1) === reversedStringAddOne ||
+        String(n + 2) === reversedStringAddTwo)
         return 1;
     return 0;
 };
