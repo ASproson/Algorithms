@@ -54,7 +54,6 @@ const isNumberInteresting = (n, awesomePhrases) => {
     if (n <= 99)
         return 0;
     const numberString = String(n).split('');
-    const firstNumber = numberString[0];
     const isNumberInPhrases = numberIsInPhrases(n, awesomePhrases);
     const areDigitsTheSame = everyDigitIsTheSameNumber(n);
     const isPalindrome = determinePalindrome(n);
