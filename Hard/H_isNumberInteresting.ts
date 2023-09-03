@@ -32,17 +32,38 @@ const everyDigitIsTheSameNumber = (n: number): number => {
   return 0;
 };
 
-const numbersAreSequential = (numberString: string[]): number => {
+const numbersAreSequential = (n: number): number => {
+  const numberString = String(n).split('');
+  const numberStringOne = String(n).split('');
+  const numberStringTwo = String(n).split('');
+
+  let oneCounter = 0;
+  let twoCounter = 0;
+
   for (let i = 1; i < numberString.length; i++) {
     let curr = Number(numberString[i]);
+    let currOne = Number(numberStringOne[i]);
+    let currTwo = Number(numberStringTwo[i]);
+
     let prev = Number(numberString[i - 1]);
+    let prevOne = Number(numberStringOne[i - 1]);
+    let prevTwo = Number(numberStringTwo[i - 1]);
+
     if (prev + 1 === curr || prev - 1 === curr) {
-      continue;
-    } else {
-      return 0;
+      twoCounter++;
+    } else if (
+      prevOne + 1 === currOne ||
+      prevOne - 1 === currOne ||
+      prevTwo + 1 === currTwo ||
+      prevTwo - 1 === currTwo
+    ) {
+      oneCounter++;
     }
   }
-  return 2;
+
+  if (twoCounter === String(n).length) return 2;
+  if (oneCounter === String(n).length) return 1;
+  return 0;
 };
 
 const determinePalindrome = (n: number): number => {
@@ -77,16 +98,15 @@ export const isNumberInteresting = (
 ): number => {
   if (n <= 99) return 0;
 
-  const numberString = String(n).split('');
-
   const isNumberInPhrases = numberIsInPhrases(n, awesomePhrases);
   const areDigitsTheSame = everyDigitIsTheSameNumber(n);
   const isPalindrome = determinePalindrome(n);
   const isAllZeroes = digitFollowedByAllZeroes(n);
+  const isSequential = numbersAreSequential(n);
 
   if (areDigitsTheSame !== 0) return areDigitsTheSame;
   if (isAllZeroes !== 0) return isAllZeroes;
-  if (numbersAreSequential(numberString) === 2) return 2;
+  if (isSequential !== 0) return isSequential;
   if (isNumberInPhrases !== 0) return isNumberInPhrases;
   if (isPalindrome !== 0) return isPalindrome;
 
