@@ -6,8 +6,13 @@ const digitFollowedByAllZeroes = (numberString) => {
     numberStringCopy.shift();
     return numberStringCopy.every((e) => e === '0') ? 2 : 0;
 };
-const everyDigitIsTheSameNumber = (numberString, firstNumber) => {
-    return numberString.every((e) => e === firstNumber) ? 2 : 0;
+const everyDigitIsTheSameNumber = (n) => {
+    const arr = [...n.toString()].map(Number);
+    if (arr.every((e) => e === arr[0]))
+        return 2;
+    if (arr.every((e) => e === arr[0] + 1 || e === arr[0] + 2))
+        return 1;
+    return 0;
 };
 const numbersAreSequential = (numberString) => {
     for (let i = 1; i < numberString.length; i++) {
@@ -22,9 +27,21 @@ const numbersAreSequential = (numberString) => {
     }
     return 2;
 };
-const isPalindrome = (number) => {
-    const reversedString = String(number).split('').reverse().join('');
-    return String(number) === reversedString ? 2 : 0;
+const determinePalindrome = (n) => {
+    const reversedString = String(n).split('').reverse().join('');
+    const reversedStringAddOne = String(n + 1)
+        .split('')
+        .reverse()
+        .join('');
+    const reversedStringAddTwo = String(n + 2)
+        .split('')
+        .reverse()
+        .join('');
+    if (String(n) === reversedString)
+        return 2;
+    if (String(n) === reversedStringAddOne || String(n) === reversedStringAddTwo)
+        return 1;
+    return 0;
 };
 const numberIsInPhrases = (n, phrases) => {
     if (phrases.includes(n))
@@ -39,16 +56,18 @@ const isNumberInteresting = (n, awesomePhrases) => {
     const numberString = String(n).split('');
     const firstNumber = numberString[0];
     const isNumberInPhrases = numberIsInPhrases(n, awesomePhrases);
-    if (everyDigitIsTheSameNumber(numberString, firstNumber) === 2)
-        return 2;
+    const areDigitsTheSame = everyDigitIsTheSameNumber(n);
+    const isPalindrome = determinePalindrome(n);
+    if (areDigitsTheSame !== 0)
+        return areDigitsTheSame;
     if (digitFollowedByAllZeroes(numberString) === 2)
         return 2;
     if (numbersAreSequential(numberString) === 2)
         return 2;
     if (isNumberInPhrases !== 0)
         return isNumberInPhrases;
-    if (isPalindrome(n) === 2)
-        return 2;
+    if (isPalindrome !== 0)
+        return isPalindrome;
     return 0;
 };
 exports.isNumberInteresting = isNumberInteresting;
