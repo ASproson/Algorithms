@@ -34,8 +34,8 @@ const everyDigitIsTheSameNumber = (n: number): number => {
 
 const numbersAreSequential = (n: number): number => {
   const numberString = String(n).split('');
-  const numberStringOne = String(n).split('');
-  const numberStringTwo = String(n).split('');
+  const numberStringOne = String(n + 1).split('');
+  const numberStringTwo = String(n + 2).split('');
 
   let oneCounter = 0;
   let twoCounter = 0;
