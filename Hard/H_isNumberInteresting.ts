@@ -112,6 +112,7 @@ export const isNumberInteresting = (
 
   return 0;
 };
+
 // https://www.codewars.com/kata/52c4dd683bfd3b434c000292/train/typescript
 
 // "7777...8?!??!", exclaimed Bob, "I missed it again! Argh!" Every time there's an interesting number coming up, he notices and then promptly forgets. Who doesn't like catching those one-off interesting mileage numbers?
