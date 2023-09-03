@@ -1,7 +1,5 @@
-const digitFollowedByAllZeroes = (numberString: string[]) => {
-  const numberStringCopy = [...numberString];
-  numberStringCopy.shift();
-  return numberStringCopy.every((e) => e === '0') ? 2 : 0;
+const digitFollowedByAllZeroes = (n: number): number => {
+  return 0;
 };
 
 const everyDigitIsTheSameNumber = (n: number): number => {
@@ -58,9 +56,10 @@ export const isNumberInteresting = (
   const isNumberInPhrases = numberIsInPhrases(n, awesomePhrases);
   const areDigitsTheSame = everyDigitIsTheSameNumber(n);
   const isPalindrome = determinePalindrome(n);
+  const isAllZeroes = digitFollowedByAllZeroes(n);
 
   if (areDigitsTheSame !== 0) return areDigitsTheSame;
-  if (digitFollowedByAllZeroes(numberString) === 2) return 2;
+  if (isAllZeroes !== 0) return isAllZeroes;
   if (numbersAreSequential(numberString) === 2) return 2;
   if (isNumberInPhrases !== 0) return isNumberInPhrases;
   if (isPalindrome !== 0) return isPalindrome;

@@ -1,10 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.isNumberInteresting = void 0;
-const digitFollowedByAllZeroes = (numberString) => {
-    const numberStringCopy = [...numberString];
-    numberStringCopy.shift();
-    return numberStringCopy.every((e) => e === '0') ? 2 : 0;
+const digitFollowedByAllZeroes = (n) => {
+    return 0;
 };
 const everyDigitIsTheSameNumber = (n) => {
     const arr = [...n.toString()].map(Number);
@@ -57,10 +55,11 @@ const isNumberInteresting = (n, awesomePhrases) => {
     const isNumberInPhrases = numberIsInPhrases(n, awesomePhrases);
     const areDigitsTheSame = everyDigitIsTheSameNumber(n);
     const isPalindrome = determinePalindrome(n);
+    const isAllZeroes = digitFollowedByAllZeroes(n);
     if (areDigitsTheSame !== 0)
         return areDigitsTheSame;
-    if (digitFollowedByAllZeroes(numberString) === 2)
-        return 2;
+    if (isAllZeroes !== 0)
+        return isAllZeroes;
     if (numbersAreSequential(numberString) === 2)
         return 2;
     if (isNumberInPhrases !== 0)
