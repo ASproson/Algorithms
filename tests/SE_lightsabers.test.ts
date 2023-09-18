@@ -7,7 +7,6 @@ describe('howManyLightSabers()', () => {
   test('returns 0 when given any name other than Zach', () => {
     expect(howManyLightSabers('Adam')).toEqual(0);
   });
-
   test('returns 0 when given any name other than Zach', () => {
     expect(howManyLightSabers()).toEqual(0);
   });
