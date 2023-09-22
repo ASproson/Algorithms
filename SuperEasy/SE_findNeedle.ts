@@ -1,4 +1,4 @@
-export const findNeedle = (haystack: string[]): string => {
+export const findNeedle = (haystack: any[]): string => {
   const index = haystack.indexOf('needle');
   return `found the needle at position ${index}`;
 };
